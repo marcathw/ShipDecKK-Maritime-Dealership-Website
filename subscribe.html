@@ -1,0 +1,196 @@
+<!-- 
+Name  : Marcelline Cathrine Wilison 
+NIM   : 2702210604
+Class : BE09
+Final Project LAB Human and Computer Interaction : HTML (Subscription Page)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipDecKK - Luxury Ship Dealership: Subscription Page</title>
+    <!-- Connect with CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1><span class="highlighted-logo">Ship</span>DecKK</h1>
+        </div>
+        <nav>
+            <div class="hamburger-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home<span></span></a></li>
+                <li><a href="./gallery.html">Gallery<span></span></a></li>
+                <li><a href="./services.html">Services<span></span></a></li>
+                <li><a href="./about.html">About Us<span></span></a></li>
+                <li><a href="./subscribe.html" class="active subscribe-btn">Subscribe<span></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Page -->
+    <main>
+        <!-- Top Section -->
+        <section class="top-page subscription">
+            <div class="top-content">
+                <h1>SUBSCRIBE</h1>
+                <p>Join our exclusive maritime community</p>
+            </div>
+        </section>
+
+        <!-- Subscription Section -->
+        <section class="subscription-form-container">
+            <div class="subscribe-benefits">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">MEMBER BENEFITS</h2>
+                    <span class="underline"></span>
+                </div>
+                <p>Subscribe to our newsletter to receive the latest updates on new vessel arrivals, exclusive offers, maritime events, and industry insights. Join our community of seafaring enthusiasts and be the first to know about our exciting developments.</p>
+                <div class="subs-benefits">
+                    <div class="benefit-frame">
+                        <div id="benefit">
+                            <div class="benefit-icon updates"></div>
+                            <div class="benefit-text">
+                                <h3>Exclusive Updates</h3>
+                                <p>Be the first to know about new vessels and special offers.</p>
+                            </div>
+                        </div>
+                        <div id="benefit">
+                            <div class="benefit-icon events"></div>
+                            <div class="benefit-text">
+                                <h3>Event Invitations</h3>
+                                <p>Receive invitations to maritime events and vessel launches.</p>
+                            </div>
+                        </div>
+                        <div id="benefit">
+                            <div class="benefit-icon insights"></div>
+                            <div class="benefit-text">
+                                <h3>Industry Insights</h3>
+                                <p>Gain access to expert articles and maritime trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscription-form-content">
+                <form id="subscriptionForm" class="subscription-form">
+                    <div class="subs-form">
+                        <label for="fullName">Full Name<span class="required"> *</span></label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                        <div class="error-message" id="fullNameError"></div>
+                    </div>
+                    <div class="subs-form">
+                        <label for="email">Email Address<span class="required"> *</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="subs-form">
+                        <label for="password">Password<span class="required"> *</span></label>
+                        <input type="password" id="password" name="password" placeholder="Create a password">
+                        <div class="error-message" id="passwordError"></div>
+                    </div>
+                    <div class="subs-form">
+                        <label for="confirmPassword">Confirm Password<span class="required"> *</span></label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                        <div class="error-message" id="confirmPasswordError"></div>
+                    </div>
+                    <div class="subs-form">
+                        <label for="age">Age<span class="required"> *</span></label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age">
+                        <div class="error-message" id="ageError"></div>
+                    </div>
+                    <div class="subs-form">
+                        <label for="interest">Maritime Interests<span class="required"> *</span></label>
+                        <select name="interests" id="interests">
+                            <option value="">Select your primary interest</option>
+                            <option value="yachts">Luxury Yachts</option>
+                            <option value="cargo">Cargo Ships</option>
+                            <option value="liners">Luxury Liners</option>
+                            <option value="liners">All Vessels</option>
+                        </select>
+                        <div class="error-message" id="interestsError"></div>
+                    </div>
+                    <div class="subs-form terms-and-con">
+                        <div class="terms">
+                            <input type="checkbox" id="tnc" name="tnc">
+                            <p>I agree to the <a href="#">Terms and Conditions</a><span class="required"> *</span></p>
+                        </div>
+                        <div class="error-message" id="tncError"></div>
+                    </div>
+                    <div class="subscribe-btn-frame">
+                    <button type="submit" class="submit-subscribe-btn">SUBSCRIBE NOW</button>
+                    </div>
+                </form>
+                <div id="formSuccess" class="form-success">
+                    <div class="success-icon"></div>
+                    <h3>Thank You for Subscribing!</h3>
+                    <p>You've successfully joined our community. Check your email for a confirmation message.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-and-desc">
+                <div class="logo-container">
+                    <h2><span class="highlighted-logo">Ship</span>DecKK</h2>
+                </div>
+                <p>Voyaging Beyond Horizons</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./subscribe.html">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ship Categories</h3>
+                    <ul>
+                        <li><a href="./gallery.html#cargo">Cargo Ships</a></li>
+                        <li><a href="./gallery.html#yachts">Luxury Yachts</a></li>
+                        <li><a href="./gallery.html#cruises">Luxury Liners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><img src="./images/Logo/location.png" alt="Location" class="logo-contact">123 Shadow Crest Boulevard</li>
+                        <li><img src="./images/Logo/telephone.png" alt="Phone Number" class="logo-contact">+62 (21) 123-715</li>
+                        <li><img src="./images/Logo/mail.png" alt="Email" class="logo-contact">info@sdeckk.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon-btn" target="_blank">FB</a>
+                        <a href="https://instagram.com" class="social-icon-btn" target="_blank">IG</a>
+                        <a href="https://x.com" class="social-icon-btn" target="_blank">X</a>
+                        <a href="https://linkedin.com" class="social-icon-btn" target="_blank">LI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ShipDecKK. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Connect with JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>

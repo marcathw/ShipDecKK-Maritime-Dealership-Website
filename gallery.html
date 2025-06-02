@@ -1,0 +1,284 @@
+<!-- 
+Name  : Marcelline Cathrine Wilison 
+NIM   : 2702210604
+Class : BE09
+Final Project LAB Human and Computer Interaction : HTML (Gallery Page)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipDecKK - Luxury Ship Dealership: Gallery Page</title>
+    <!-- Connect with CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1><span class="highlighted-logo">Ship</span>DecKK</h1>
+        </div>
+        <nav>
+            <div class="hamburger-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home<span></span></a></li>
+                <li><a href="./gallery.html" class="active">Gallery<span></span></a></li>
+                <li><a href="./services.html">Services<span></span></a></li>
+                <li><a href="./about.html">About Us<span></span></a></li>
+                <li><a href="./subscribe.html" class="subscribe-btn">Subscribe<span></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Page -->
+    <main>
+        <!-- Top Section -->
+        <section class="top-page gallery">
+            <div class="top-content">
+                <h1>OUR FLEET</h1>
+                <p>Explore our collection of extraordinary vessels</p>
+            </div>
+        </section>
+
+        <!-- Category Filter and Search -->
+        <section class="category-filter">
+            <div class="filter-buttons-frame">
+                <button class="gallery-filter-btn active" data-filter="all">ALL</button>
+                <button class="gallery-filter-btn" data-filter="cargo">CARGO</button>
+                <button class="gallery-filter-btn" data-filter="yachts">YACHT</button>
+                <button class="gallery-filter-btn" data-filter="cruises">LINERS</button>
+            </div>
+            <div class="search-bar-frame">
+                <input type="text" id="search-ship" placeholder="Enter ship name...">
+                <button id="search-btn">SEARCH</button>
+            </div>
+        </section>
+
+        <!-- Ships -->
+        <section class="gallery-content" id="gallery-content-frame">
+            <div class="ship-card" data-category="cruises">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Luxury Liners/Silver Dawn.webp" alt="Silver Dawn">
+                    </div>
+                    <div class="ship-details">
+                        <h3>Silver Dawn</h3>
+                        <p class="price">$150,000,000</p>
+                        <p class="capacity">598 ft | 576 Passengers</p>
+                        <p class="description">A magnificent cruise ship featuring world-class amenities, luxurious suites, multiple dining venues, a grand spa, and endless entertainment for the ultimate voyage at sea.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ship-card" data-category="yachts">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Luxury Yachts/78 Monte Carlo.webp" alt="78 Monte Carlo">
+                    </div>
+                    <div class="ship-details">
+                        <h3>78 Monte Carlo</h3>
+                        <p class="price">$7,200,000</p>
+                        <p class="capacity">78 ft | 12 Guests</p>
+                        <p class="description">A sleek yacht with spacious decks, lavish interiors, and state-of-the-art technology for the ultimate luxury experience.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ship-card" data-category="yachts">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Luxury Yachts/La Luna.webp" alt="La Luna">
+                    </div>
+                    <div class="ship-details">
+                        <h3>La Luna</h3>
+                        <p class="price">$11,500,000</p>
+                        <p class="capacity">111 ft | 5 Guests</p>
+                        <p class="description">Experience elegance and performance with spacious decks, lavish interiors, and top-tier amenities for an unforgettable voyage.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ship-card" data-category="cargo">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Cargo Ships/Container Vessel 7354 DWT.jpg" alt="Jerviell">
+                    </div>
+                    <div class="ship-details">
+                        <h3>Jerviell</h3>
+                        <p class="price">$2,300,000</p>
+                        <p class="capacity">335 ft | 7354 Tons</p>
+                        <p class="description">Reliable and efficient, this cargo ship is built for bulk and container transport, featuring a durable hull and modern navigation.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ship-card" data-category="yachts">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Luxury Yachts/Lady Sandals.webp" alt="Lady Sandals">
+                    </div>
+                    <div class="ship-details">
+                        <h3>Lady Sandals</h3>
+                        <p class="price">$5,700,000</p>
+                        <p class="capacity">131 ft | 8 Guests</p>
+                        <p class="description">A masterpiece of design, this luxury yacht offers expansive decks, lavish interiors, and top-tier amenities. Perfect for cruising in style with unmatched comfort and performance.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ship-card" data-category="cargo">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Cargo Ships/250TEU Container Ship.jpg" alt="Dekster">
+                    </div>
+                    <div class="ship-details">
+                        <h3>Dekster</h3>
+                        <p class="price">$2,100,000</p>
+                        <p class="capacity">210 ft | 4000 Tons</p>
+                        <p class="description">Built for efficiency and durability, this cargo ship offers smooth operations for bulk and container transport. Ideal for coastal and regional trade with modern navigation and fuel-efficient design.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ship-card" data-category="yachts">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Luxury Yachts/Sounion II.webp" alt="Sounion II">
+                    </div>
+                    <div class="ship-details">
+                        <h3>Sounion II</h3>
+                        <p class="price">$4,900,000</p>
+                        <p class="capacity">101 ft | 14 Guests</p>
+                        <p class="description">A stunning luxury yacht with sleek design, spacious decks, elegant interiors, and state-of-the-art amenities for an unparalleled cruising experience.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ship-card" data-category="cruises">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Luxury Liners/Tampa Bay.jpg" alt="Tampa Bay">
+                    </div>
+                    <div class="ship-details">
+                        <h3>Tampa Bay</h3>
+                        <p class="price">$250,000,000</p>
+                        <p class="capacity">700 ft | 890 Passengers</p>
+                        <p class="description">Spacious and well-equipped, this cruise ship offers luxurious suites, multiple dining options, top-tier entertainment, and modern amenities for an exceptional voyage experience.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ship-card" data-category="yachts">
+                <div id="ship-card-content">
+                    <div class="ship-image">
+                        <img src="./images/Luxury Yachts/Bella Vita.webp" alt="Bella Vita">
+                    </div>
+                    <div class="ship-details">
+                        <h3>Bella Vita</h3>
+                        <p class="price">$11,700,000</p>
+                        <p class="capacity">200 ft | 20 Guests</p>
+                        <p class="description">A perfect blend of sophistication and power, delivering unmatched cruising with opulent interiors and modern technology.</p>
+                        <div class="gallery-ship-button-frame">
+                            <a href="#" class="ship-details-btn">VIEW DETAILS</a>
+                            <a href="#" class="ship-checkout-btn">PURCHASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-and-desc">
+                <div class="logo-container">
+                    <h2><span class="highlighted-logo">Ship</span>DecKK</h2>
+                </div>
+                <p>Voyaging Beyond Horizons</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./subscribe.html">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ship Categories</h3>
+                    <ul>
+                        <li><a href="./gallery.html#cargo">Cargo Ships</a></li>
+                        <li><a href="./gallery.html#yachts">Luxury Yachts</a></li>
+                        <li><a href="./gallery.html#cruises">Luxury Liners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><img src="./images/Logo/location.png" alt="Location" class="logo-contact">123 Shadow Crest Boulevard</li>
+                        <li><img src="./images/Logo/telephone.png" alt="Phone Number" class="logo-contact">+62 (21) 123-715</li>
+                        <li><img src="./images/Logo/mail.png" alt="Email" class="logo-contact">info@sdeckk.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon-btn" target="_blank">FB</a>
+                        <a href="https://instagram.com" class="social-icon-btn" target="_blank">IG</a>
+                        <a href="https://x.com" class="social-icon-btn" target="_blank">X</a>
+                        <a href="https://linkedin.com" class="social-icon-btn" target="_blank">LI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ShipDecKK. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Connect with JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>

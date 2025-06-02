@@ -1,0 +1,204 @@
+<!-- 
+Name  : Marcelline Cathrine Wilison 
+NIM   : 2702210604
+Class : BE09
+Final Project LAB Human and Computer Interaction : HTML (Home Page)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipDecKK - Luxury Ship Dealership: Home Page</title>
+    <!-- Connect with CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1><span class="highlighted-logo">Ship</span>DecKK</h1>
+        </div>
+        <nav>
+            <div class="hamburger-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home<span></span></a></li>
+                <li><a href="./gallery.html">Gallery<span></span></a></li>
+                <li><a href="./services.html">Services<span></span></a></li>
+                <li><a href="./about.html">About Us<span></span></a></li>
+                <li><a href="./subscribe.html" class="subscribe-btn">Subscribe<span></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Page -->
+    <main>
+        <!-- Top Section -->
+        <section class="top-page homepage">
+            <div class="top-content">
+                <h1>VOYAGE BEYOND HORIZONS</h1>
+                <p>Since 2020, ShipDecKK has been the premier destination for discerning maritime enthusiasts</p>
+                <a href="./gallery.html" id="homepage-btn">EXPLORE FLEET</a>
+            </div>
+        </section>
+
+        <!-- Ship Categories -->
+        <section class="ship-categories">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">OUR COLLECTION</h2>
+                <span class="underline"></span>
+            </div>
+            <div class="category">
+                <div id="category-card">
+                    <a href="./gallery.html#cargo">
+                        <img src="./images/Cargo Ships/Container Vessel 7354 DWT.jpg" alt="Cargo Ships">
+                        <h3>Cargo Ships</h3>
+                        <p>Industrial-grade ships built for efficiency, durability, and maximum capacity.</p>
+                    </a>
+                </div>
+                <div id="category-card">
+                    <a href="./gallery.html#yachts">
+                        <img src="./images/Luxury Yachts/La Luna.webp" alt="Luxury Yachts">
+                        <h3>Luxury Yachts</h3>
+                        <p>Experience unmatched opulence on water with our premium yacht collection.</p>
+                    </a>
+                </div>
+                <div id="category-card">
+                    <a href="./gallery.html#cruises">
+                        <img src="./images/Luxury Liners/Silver Dawn.webp" alt="Luxury Liners">
+                        <h3>Luxury Liners</h3>
+                        <p>Floating paradises designed for entertainment and long-distance voyages.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discover Our Story -->
+        <section class="discover-our-story">
+            <div id="discover-content">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">NAVIGATING THE FUTURE</h2>
+                    <span class="underline"></span>
+                </div>
+                <p>Founded in 2020, ShipDecKK quickly ascended to become the galaxy's premier ship dealership. Our commitment to innovation and excellence has positioned us as pioneers in the maritime universe.</p>
+                <a href="./about.html" id="homepage-btn" class="secondary">DISCOVER OUR STORY</a>
+            </div>
+            <div class="discover-ring">
+                <div class="rotate-ring"></div>
+            </div>
+        </section>
+
+        <!-- Testimony -->
+        <section class="testimonials">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">CLIENT TESTIMONIALS</h2>
+                <span class="underline"></span>
+            </div>
+            <div class="testimony-slide">
+                <div class="testimonial active">
+                    <div id="testimony-card">
+                        <p>"Absolutely thrilled with my new yacht! The team was super professional, helped me find the perfect model, and made the whole process seamless. Highly recommend!"</p>
+                        <div class="testimony-client">
+                            <h4>Miecel Alicia</h4>
+                            <p>Luxury Travel Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div id="testimony-card">
+                        <p>"ShipDeckK made my yacht dreams reality! Their expertise guided me to perfection—impeccable craftsmanship and seamless experience. Already planning my next vessel with these true professionals!"</p>
+                        <div class="testimony-client">
+                            <h4>Kelvin Jonathan</h4>
+                            <p>Yacht Owner and Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div id="testimony-card">
+                        <p>"Expanding our fleet was a big decision, and this dealership made it seamless. Top-tier service, transparent pricing, and ships that exceed expectations."</p>
+                        <div class="testimony-client">
+                            <h4>Natasha Kayla</h4>
+                            <p>Cruise Line CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn">
+                        <img src="./images/Logo/chevron-left.png" alt="Previous" class="chevron default">
+                        <img src="./images/Logo/chevron-left-hover.png" alt="Previous" class="chevron hover">
+                    </button>
+                    <div class="dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="next-btn">
+                        <img src="./images/Logo/chevron-right.png" alt="Next" class="chevron default">
+                        <img src="./images/Logo/chevron-right-hover.png" alt="Next" class="chevron hover">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-and-desc">
+                <div class="logo-container">
+                    <h2><span class="highlighted-logo">Ship</span>DecKK</h2>
+                </div>
+                <p>Voyaging Beyond Horizons</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./subscribe.html">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ship Categories</h3>
+                    <ul>
+                        <li><a href="./gallery.html#cargo">Cargo Ships</a></li>
+                        <li><a href="./gallery.html#yachts">Luxury Yachts</a></li>
+                        <li><a href="./gallery.html#cruises">Luxury Liners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><img src="./images/Logo/location.png" alt="Location" class="logo-contact">123 Shadow Crest Boulevard</li>
+                        <li><img src="./images/Logo/telephone.png" alt="Phone Number" class="logo-contact">+62 (21) 123-715</li>
+                        <li><img src="./images/Logo/mail.png" alt="Email" class="logo-contact">info@sdeckk.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon-btn" target="_blank">FB</a>
+                        <a href="https://instagram.com" class="social-icon-btn" target="_blank">IG</a>
+                        <a href="https://x.com" class="social-icon-btn" target="_blank">X</a>
+                        <a href="https://linkedin.com" class="social-icon-btn" target="_blank">LI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ShipDecKK. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Connect with JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
